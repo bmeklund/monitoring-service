@@ -1,0 +1,20 @@
+spec:
+  template:
+    spec:
+      containers:
+        -
+          resources:
+            requests:
+              cpu: "0.2"
+            #              memory: 256Mi
+            limits:
+              cpu: "1.0"
+          #              memory: 256Mi
+          env:
+            - name: SPRING_APPLICATION_JSON
+              value: '{"server":{"tomcat":{"max-threads":1}}}'
+            - name: OPENSHIFT_PROJECT
+              valueFrom:
+                  configMapKeyRef:
+                    name: monitoring-config
+                    key: openshift.projectname
