@@ -1,4 +1,4 @@
-package com.tieto.service.monitoring.config;
+package com.meklund.service.monitoring.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

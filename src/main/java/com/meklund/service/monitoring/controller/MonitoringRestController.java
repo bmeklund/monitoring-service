@@ -1,8 +1,8 @@
-package com.tieto.service.monitoring.controller;
+package com.meklund.service.monitoring.controller;
 
-import com.tieto.service.monitoring.domain.StatusCheck;
-import com.tieto.service.monitoring.domain.dto.Response;
-import com.tieto.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.StatusCheck;
+import com.meklund.service.monitoring.domain.dto.Response;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ public class MonitoringRestController {
     @ApiOperation(value = "Get health status")
     @GetMapping("/health")
     public ResponseEntity<Response> getStatus() {
-        logger.info("Got status call from Tieto watch");
+        logger.info("Got status call, returning response");
         Response response = statusCheck.checkStatus();
         if (ServiceStatus.OK.equals(response.getStatus())) {
             logger.info("StatusCheck: serviceStatus={}", response);

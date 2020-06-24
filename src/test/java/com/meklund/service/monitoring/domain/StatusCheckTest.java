@@ -1,7 +1,7 @@
-package com.tieto.service.monitoring.domain;
+package com.meklund.service.monitoring.domain;
 
-import com.tieto.service.monitoring.domain.dto.Response;
-import com.tieto.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.dto.Response;
+import com.meklund.service.monitoring.domain.dto.ServiceStatus;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

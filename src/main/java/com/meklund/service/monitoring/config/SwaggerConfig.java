@@ -1,4 +1,4 @@
-package com.tieto.service.monitoring.config;
+package com.meklund.service.monitoring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,17 +21,17 @@ public class SwaggerConfig {
 	String version = "1.0.0";
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tieto.service.monitoring"))
+                .apis(RequestHandlerSelectors.basePackage("com.meklund.service.monitoring"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo(version));
     }
 
     private ApiInfo apiInfo(String version) {
-        return new ApiInfo("Monitoring service", "REST API for monitoring uses.\r\n Tieto", version, "Terms of service",
-                new Contact("Tieto", "http://www.tieto.com",
-                        "Tieto, info@tieto.com"),
-                "Tieto", "www.tieto.com", new ArrayList<>());
+        return new ApiInfo("Monitoring service", "REST API for monitoring uses.\r\n", version, "Terms of service",
+                new Contact("", "",
+                        ""),
+                "", "", new ArrayList<>());
     }
 }
 

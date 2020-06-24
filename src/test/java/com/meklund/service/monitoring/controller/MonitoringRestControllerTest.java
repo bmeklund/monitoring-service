@@ -1,9 +1,9 @@
-package com.tieto.service.monitoring.controller;
+package com.meklund.service.monitoring.controller;
 
 import com.google.gson.Gson;
-import com.tieto.service.monitoring.domain.StatusCheck;
-import com.tieto.service.monitoring.domain.dto.Response;
-import com.tieto.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.StatusCheck;
+import com.meklund.service.monitoring.domain.dto.Response;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

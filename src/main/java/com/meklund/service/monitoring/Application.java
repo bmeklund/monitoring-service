@@ -1,4 +1,4 @@
-package com.tieto.service.monitoring;
+package com.meklund.service.monitoring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

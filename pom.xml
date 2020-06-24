@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tieto.service</groupId>
+    <groupId>com.meklund.service</groupId>
     <artifactId>monitoring-service</artifactId>
     <version>1.1</version>
 
@@ -162,9 +162,4 @@
         </repository>
     </distributionManagement>
 
-    <scm>
-        <connection>scm:git:http://folksam-gitlab.apps.openshift.onecloud.tieto.com/xxekluqm/monitoring-service.git</connection>
-        <developerConnection>scm:git:http://folksam-gitlab.apps.openshift.onecloud.tieto.com/xxekluqm/monitoring-service.git</developerConnection>
-      <tag>monitoring-service-1.1</tag>
-  </scm>
- </project>
+</project>

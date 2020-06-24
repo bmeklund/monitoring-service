@@ -1,4 +1,4 @@
-package com.tieto.service.monitoring.domain.dto;
+package com.meklund.service.monitoring.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

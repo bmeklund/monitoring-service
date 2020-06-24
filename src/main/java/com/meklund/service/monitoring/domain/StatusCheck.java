@@ -1,7 +1,7 @@
-package com.tieto.service.monitoring.domain;
+package com.meklund.service.monitoring.domain;
 
-import com.tieto.service.monitoring.domain.dto.Response;
-import com.tieto.service.monitoring.domain.dto.ServiceStatus;
+import com.meklund.service.monitoring.domain.dto.Response;
+import com.meklund.service.monitoring.domain.dto.ServiceStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

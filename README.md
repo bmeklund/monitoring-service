@@ -1,6 +1,6 @@
 # Monitoring-service
 
-This service expose a health-endpoint for polling to assure connectivity between Tieto-wath(or likewise) and OpenShift-projects.
+This service expose a health-endpoint for polling to assure connectivity between and too OpenShift-projects.
 Deploy this service on a project together with a ConfigMap for the projectname.
 Querying the health-endpoint will result in a http-200 response with status and a description. 
 Responseformat: {"status”:”OK/CRITICAL”,”body”:”[PROJECTNAME] Monitoring Ok/Not available"}
@@ -44,7 +44,7 @@ Then find the name of the pod that runs this quickstart, and output the logs fro
 
 You can also use the OpenShift console to view status, running pods, and view logs and much more.  
 
-**Readiness** and **LivenessProbe** polls are aimed/connected to the /actuator/health endpoints instead of /health as /healt is mainly to be used for the tieto watch or other polls.
+**Readiness** and **LivenessProbe** polls are aimed/connected to the /actuator/health endpoints instead of /health .
 Logs are read and the readiness will pollute the logs if aimed at /health.
 
 ## Open API specification (Swagger)
